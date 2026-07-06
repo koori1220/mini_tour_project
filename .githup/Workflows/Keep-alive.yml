@@ -14,4 +14,4 @@ jobs:
       - name: Trigger Render Deploy Hook
         # ใช้ curl ยิง POST Request ไปที่ URL ของ Render โดยดึงค่ามาจาก GitHub Secrets เพื่อความปลอดภัย
         run: |
-          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+          curl -X POST ${{ secrets.https://mini-tour-project.onrender.com }}
