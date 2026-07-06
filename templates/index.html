@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Tour กำแพงเพชร</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+        /* ปรับแต่งขนาดของแผนที่ Folium ที่จะถูกนำมาแสดง */
+        .map-container iframe { 
+            width: 100% !important; 
+            height: 450px !important; 
+            border-radius: 0.5rem; 
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <nav class="bg-teal-600 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <h1 class="text-2xl font-bold flex items-center gap-2">
+                📍 Mini Tour กำแพงเพชร
+            </h1>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <section class="mb-12 bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
+            <h2 class="text-xl font-semibold mb-4 text-slate-800">เส้นทางการเดินทาง</h2>
+            <div class="map-container rounded-xl overflow-hidden shadow-inner">
+                {{ map_html|safe }}
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-6 text-slate-800">📸 สถานที่น่าสนใจ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {% for spot in spots %}
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg transition-all duration-300">
+                    <img src="{{ spot.image }}" alt="{{ spot.name }}" class="w-full h-48 object-cover">
+                    <div class="p-5 flex flex-col justify-between h-[calc(100%-12rem)]">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">{{ spot.name }}</h3>
+                            <p class="text-slate-600 text-sm mb-4">{{ spot.description }}</p>
+                        </div>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination={{ spot.lat }},{{ spot.lon }}" target="_blank" 
+                           class="mt-auto block w-full text-center bg-teal-500 hover:bg-teal-600 text-white font-medium py-2.5 px-4 rounded-xl transition-colors shadow-sm hover:shadow">
+                            🚗 เริ่มนำทาง
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 text-center py-6 mt-12 text-sm">
+        <p>&copy; Mini Tour Kamphaeng Phet Project</p>
+    </footer>
+
+</body>
+</html>
