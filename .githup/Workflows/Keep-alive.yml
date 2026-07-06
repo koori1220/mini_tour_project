@@ -1,0 +1,17 @@
+name: Deploy to Render
+
+# ตั้งค่าให้ทำงานเมื่อมีการ Push โค้ดไปยัง Branch 'main' (หรือเปลี่ยนเป็น 'master' ถ้าคุณใช้ master)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Render Deploy Hook
+        # ใช้ curl ยิง POST Request ไปที่ URL ของ Render โดยดึงค่ามาจาก GitHub Secrets เพื่อความปลอดภัย
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
