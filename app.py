@@ -27,14 +27,14 @@ tour_spots = [
         "lat": 16.453815789032237, 
         "lon": 99.51417737139418,
         "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
-        "image": "https://www.kpru.ac.th/about-kpru/img/history/2547.webp"
+        "image": "https://reg.kpru.ac.th/th/data/base/regnow.jpg"
     },
     {
         "id": 4,
         "name": "ชาใจ Story",
         "lat": 16.459532618747705,  
         "lon": 99.51768742470426,
-        "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
+        "description": "สถานที่พักผ่อน กินชาเย็นๆ",
         "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFKaJzr-Ry3bv-HhEx3Q5jN-Ieg73vxqOMBrij8ly1J8dg3x9mzpteU6sSUqk_8TzgiyD9GUwAwVvJnTV3awPeKHh0NcAQA56BZAoo3YVI3-WALNr1VYGDFWTYd4O5VbhyaIZASMYka6ag=w408-h544-k-no"
     },
     {
@@ -42,7 +42,7 @@ tour_spots = [
         "name": "คิริมัสสึชาบู สาขากำแพงเพชร",
         "lat": 16.449602797122367,   
         "lon": 99.50894365236901,
-        "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
+        "description": "ร้านชาบูปิ้งอย่าง",
         "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1N1axSVo3rxt8AEwjFtKhQgCqllvETEwbPP9CQGgFixFiIvyj6PYAUaNnwg1O29KH5BDjIoE1MWnorux_3z4tVqzKHa8ppKuCrPZuOgbgkc4dW5ORWOsXbgo5GKRBBPuLkw51NeNByYdH=w408-h306-k-no"
     }
 ]
