@@ -29,6 +29,14 @@ tour_spots = [
         "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
         "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800&auto=format&fit=crop"
     }
+    {
+        "id": 4,
+        "name": "มหาวิทยาลัยราชภัฏกำแพงเพชร",
+        "lat": 16.453815789032237, 
+        "lon": 99.51417737139418,
+        "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
+        "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800&auto=format&fit=crop"
+    },
 ]
 
 @app.route('/')
