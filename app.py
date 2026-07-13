@@ -7,19 +7,19 @@ app = Flask(__name__)
 tour_spots = [
     {
         "id": 1,
-        "name": "จุดศูนย์กลางเมืองกำแพงเพชร",
-        "lat": 16.463528629381965,
-        "lon": 99.52823841084464,
+        "name": "ศาลหลักเมืองกำแพงเพชร",
+        "lat": 16.49052155547407, 
+        "lon": 99.51596786992796,
         "description": "จุดเริ่มต้นการเดินทางในกำแพงเพชร แหล่งรวมความเจริญและประวัติศาสตร์",
-        "image": "https://images.unsplash.com/photo-1590393802688-e04e902b70f0?q=80&w=800&auto=format&fit=crop"
+        "image": "http://lh3.googleusercontent.com/gps-cs-s/APNQkAEKMllqGFSek3J7oOjxZbZZlvULkcRHYC4SsNXrKVe7xvtfZjTKtW69JTRaPx3Rmry1el0PVc198Iror06y5bsy2-CvkrF86e44_Dtpd_7LtQDltJM2dzLxut9FpKSCKo3qCyefmz37_9U-=w408-h544-k-no"
     },
     {
         "id": 2,
         "name": "น้ำตกคลองลาน",
-        "lat": 16.1287902,
-        "lon": 99.2787884,
+        "lat": 16.1298085014545, 
+        "lon": 99.27469516897443,
         "description": "น้ำตกที่สวยงามและยิ่งใหญ่ที่สุดแห่งหนึ่ง เหมาะแก่การพักผ่อนท่ามกลางธรรมชาติ",
-        "image": "https://images.unsplash.com/photo-1433838552652-f9a46b332c40?q=80&w=800&auto=format&fit=crop"
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGmg73ee71MnnRuKUaCRkxEsoi7RFx4Du9AIA6wtxCrBU0h-tpVma76pEAqFcs7AsCMj4s0W0JspaNKkwb4BG0UxzG3s5up2Q0EvI28HOhyNs0LSV20NTMK-kmAqiJTjf7yX5om=w408-h306-k-no"
     },
     {
         "id": 3,
@@ -27,15 +27,23 @@ tour_spots = [
         "lat": 16.453815789032237, 
         "lon": 99.51417737139418,
         "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
-        "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800&auto=format&fit=crop"
+        "image": "https://www.kpru.ac.th/about-kpru/img/history/2547.webp"
     },
     {
         "id": 4,
-        "name": "มหาวิทยาลัยราชภัฏกำแพงเพชร",
-        "lat": 16.453815789032237, 
-        "lon": 99.51417737139418,
+        "name": "ชาใจ Story",
+        "lat": 16.459532618747705,  
+        "lon": 99.51768742470426,
         "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
-        "image": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800&auto=format&fit=crop"
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFKaJzr-Ry3bv-HhEx3Q5jN-Ieg73vxqOMBrij8ly1J8dg3x9mzpteU6sSUqk_8TzgiyD9GUwAwVvJnTV3awPeKHh0NcAQA56BZAoo3YVI3-WALNr1VYGDFWTYd4O5VbhyaIZASMYka6ag=w408-h544-k-no"
+    },
+    {
+        "id": 5,
+        "name": "คิริมัสสึชาบู สาขากำแพงเพชร",
+        "lat": 16.449602797122367,   
+        "lon": 99.50894365236901,
+        "description": "สถาบันอุดมศึกษาที่สำคัญ ศูนย์รวมแหล่งเรียนรู้ด้านวิทยาศาสตร์และเทคโนโลยี",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1N1axSVo3rxt8AEwjFtKhQgCqllvETEwbPP9CQGgFixFiIvyj6PYAUaNnwg1O29KH5BDjIoE1MWnorux_3z4tVqzKHa8ppKuCrPZuOgbgkc4dW5ORWOsXbgo5GKRBBPuLkw51NeNByYdH=w408-h306-k-no"
     }
 ]
 
